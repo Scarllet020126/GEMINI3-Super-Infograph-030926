@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --p-bg: #ffffff;
+  --p-text: #0f172a;
+  --p-primary: #3b82f6;
+  --p-secondary: #64748b;
+  --p-card-bg: #f8fafc;
+  --p-border: #e2e8f0;
+  --p-font: "Inter", sans-serif;
+  --p-radius: 0.75rem;
+  --p-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.dark {
+  --p-bg: #0f172a;
+  --p-text: #f8fafc;
+  --p-card-bg: #1e293b;
+  --p-border: #334155;
+}
+
+.painter-wrapper {
+  background-color: var(--p-bg);
+  color: var(--p-text);
+  font-family: var(--p-font);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.painter-card {
+  background-color: var(--p-card-bg);
+  border: 2px solid var(--p-border);
+  border-radius: var(--p-radius);
+  box-shadow: var(--p-shadow);
+  transition: all 0.3s;
+}
+
+.painter-primary {
+  color: var(--p-primary);
+}
+
+.painter-secondary {
+  color: var(--p-secondary);
+}
+
+.painter-bg-primary {
+  background-color: var(--p-primary);
+}
+
+.painter-bg-secondary {
+  background-color: var(--p-secondary);
+}
